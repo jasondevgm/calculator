@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator 🧮</title>
+</head>
+
+<body>
+    <header id="titlebar">
+        <div class="draggable">
+            <div class="controls">
+                <span class="button close">❌</span>
+                <span class="button minimize">▫️</span>
+                <span class="button maximize">◽</span>
+            </div>
+
+            <span class="title">
+                <!-- TODO -->
+                <!-- <span class="Preferences">
+                    ⚙️
+                </span> -->
+                <span>
+                    Calculator 🧮
+                </span>
+            </span>
+        </div>
+    </header>
+    <div class="parent" id="parentEL">
+        <div class="div0" id="solution-output"></div>
+        <div class="div1" id="current-output">0</div>
+        <button class="button2 buttonStyle2" onclick="saveData()">GM</button>
+        <button class="button3 buttonStyle2" onclick="showData()">LM</button>
+        <button class="button4 buttonStyle2" onclick="delInput()">E</button>
+        <button class="button5 buttonStyle2" onclick="operator('/')">/</button>
+        <button class="button6 buttonStyle" onclick="pressNumber(7)">7</button>
+        <button class="button7 buttonStyle" onclick="pressNumber(8)">8</button>
+        <button class="button8 buttonStyle" onclick="pressNumber(9)">9</button>
+        <button class="button9 buttonStyle2" onclick="operator('*')">*</button>
+        <button class="button10 buttonStyle" onclick="pressNumber(4)">4</button>
+        <button class="button11 buttonStyle" onclick="pressNumber(5)">5</button>
+        <button class="button12 buttonStyle" onclick="pressNumber(6)">6</button>
+        <button class="button13 buttonStyle2" onclick="operator('-')">-</button>
+        <button class="button14 buttonStyle" onclick="pressNumber(1)">1</button>
+        <button class="button15 buttonStyle" onclick="pressNumber(2)">2</button>
+        <button class="button16 buttonStyle" onclick="pressNumber(3)">3</button>
+        <button class="button17 buttonStyle2" onclick="operator('+')">+</button>
+        <button class="button18 buttonStyle2" onclick="toggleSign()">+/-</button>
+        <button class="button19 buttonStyle" onclick="pressNumber(0)">0</button>
+        <button class="button20 buttonStyle2" onclick="decimal()">.</button>
+        <button class="button21 buttonStyle2" onclick="performCalculation()">=</button>
+        <div class="div22" id="side-bar"></div>
+    </div>
+    <script src="main.js" defer=""></script>
+</body>
+
+</html>
